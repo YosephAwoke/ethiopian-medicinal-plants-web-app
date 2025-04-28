@@ -6,448 +6,511 @@
       "Habitat": "Dry bushland",
       "Parts used": "Fruits, Leaflets",
       "Medicinal Use": "Treatment of diarrhea, diabetes, gum issues, hemorrhage, loose teeth, stomach ailments ",
-      "image": "./plants/Acacia nilotica.jpg"
+      "image": "./img/plants/Acacia nilotica.jpg"
     },
     {
       "Scientific name": "Acmella caulirhiza",
       "Local name": "የምድር በርበሬ Yemdir berbere",
       "Habitat": "Wetlands, forest floors, stream banks",
       "Parts used": "Leaves, Flowers",
-      "Medicinal Use": "Healing of tonsillitis through flower chewing and application "
+      "Medicinal Use": "Healing of tonsillitis through flower chewing and application ",
+      "image": "./img/plants/Acmella caulirhiza.jpg"
     },
     {
       "Scientific name": "Aerva javanica",
       "Local name": "የበረሃ ጥጥ Yebereha tete",
       "Habitat": "Dry sandy plains, dried river courses",
       "Parts used": "Leaves, roots",
-      "Medicinal Use": "Treatment of kidney stones, urinary disorders, inflammation "
+      "Medicinal Use": "Treatment of kidney stones, urinary disorders, inflammation ",
+      "image": "./img/plants/Aerva javanica.jpg"
     },
     {
       "Scientific name": "Alliaceae, Allium sativum",
       "Local name": "ነጭ ሽንኩርት Nech shinkurt",
       "Habitat": "Cultivated",
       "Parts used": "Bulb",
-      "Medicinal Use": "Antimicrobial effects, blood pressure, and cholesterol reduction "
+      "Medicinal Use": "Antimicrobial effects, blood pressure, and cholesterol reduction ",
+      "image": "./img/plants/Alliaceae Allium sativum.jpg"
     },
     {
       "Scientific name": "Aloe monticola",
       "Local name": "እሬት Eret",
       "Habitat": "Steep bare mountain slopes",
       "Parts used": "Root",
-      "Medicinal Use": "Anthrax treatment by root pounding and mixing with cold water and local alcohol "
+      "Medicinal Use": "Anthrax treatment by root pounding and mixing with cold water and local alcohol ",
+      "image": "./img/plants/Aloe monticola.jpg"
     },
     {
       "Scientific name": "Amaranthus caudatus",
       "Local name": "ጭጎጎት Chigogot",
       "Habitat": "Roadsides, riverbanks, floodplains",
       "Parts used": "Leaves",
-      "Medicinal Use": "Diarrhea is cured through pounded and boiled leaves "
+      "Medicinal Use": "Diarrhea is cured through pounded and boiled leaves ",
+      "image": "./img/plants/Amaranthus caudatus.jpg"
     },
     {
       "Scientific name": "Argemone mexicana",
       "Local name": "የአህያ እሾህ Yahyaeshoh",
       "Habitat": "Roadside, wastelands",
       "Parts used": "Seeds, leaves",
-      "Medicinal Use": "Influenza and rabies treatment by crushing root or leaf and administration with water "
+      "Medicinal Use": "Influenza and rabies treatment by crushing root or leaf and administration with water ",
+      "image": "./img/plants/Argemone mexicana.jpg"
     },
     {
       "Scientific name": "Artemisia abyssinica",
       "Local name": "ችኩኝ Chikugn",
       "Habitat": "Juniper forest, open grassland, fallow fields",
       "Parts used": "Fresh root",
-      "Medicinal Use": "Protection from evil spirits through root crushing, smelling, and water normalization "
+      "Medicinal Use": "Protection from evil spirits through root crushing, smelling, and water normalization ",
+      "image": "./img/plants/Artemisia abyssinica.jpg"
     },
     {
       "Scientific name": "Barleria eranthemoides ",
       "Local name": "የሴት አፍ Yeset af",
       "Habitat": "Acacia woodland scrublands",
       "Parts used": "Roots",
-      "Medicinal Use": "Heartburn remedy "
+      "Medicinal Use": "Heartburn remedy ",
+      "image": "./img/plants/Barleria eranthemoides.jpg"
     },
     {
       "Scientific name": "Brassica oleracea",
       "Local name": "ጎመን Gomen",
       "Habitat": "Cultivated",
       "Parts used": "Leaves, stems",
-      "Medicinal Use": "Nutritional supplementation, antioxidant properties "
+      "Medicinal Use": "Nutritional supplementation, antioxidant properties ",
+      "image": "./img/plants/Brassica oleracea.jpg"
     },
     {
       "Scientific name": "Calpurnia aurea",
       "Local name": "ድግታ Digita",
       "Habitat": "Forest margins, bushland/grassland, favored by overgrazing",
       "Parts used": "Leaves, roots, seeds",
-      "Medicinal Use": "Prevention of snake bites by boiling leaves with honey, and amebiasis cure through crushing and boiling with a coffee leaf for a drink. "
+      "Medicinal Use": "Prevention of snake bites by boiling leaves with honey, and amebiasis cure through crushing and boiling with a coffee leaf for a drink. ",
+      "image": "./img/plants/Calpurnia aurea.jpg"
     },
     {
       "Scientific name": "Carica papaya",
       "Local name": "ፓፓያ Papaya",
       "Habitat": "Home gardens, small and large plantations",
       "Parts used": "Seeds",
-      "Medicinal Use": "Treatment of diarrhea and ascariasis by consuming ground and boiled seeds with honey "
+      "Medicinal Use": "Treatment of diarrhea and ascariasis by consuming ground and boiled seeds with honey ",
+      "image": "./img/plants/Carica papaya.webp"
     },
     {
       "Scientific name": "Carissa edulis",
       "Local name": "አጋም Agam",
       "Habitat": "Open Acacia bushland",
       "Parts used": "Root",
-      "Medicinal Use": "Shortening labor periods before delivery of women "
+      "Medicinal Use": "Shortening labor periods before delivery of women ",
+      "image": "./img/plants/Carissa edulis.jpg"
     },
     {
       "Scientific name": "Catha edulis",
       "Local name": "ጫት Chat",
       "Habitat": "Highlands",
       "Parts used": "Leaves",
-      "Medicinal Use": "Stimulant, enhancing alertness and mood "
+      "Medicinal Use": "Stimulant, enhancing alertness and mood ",
+      "image": "./img/plants/Catha edulis.jpg"
     },
     {
       "Scientific name": "Citrus aurantifolia",
       "Local name": "ባህር ሎሚ Bahre-Lomi",
       "Habitat": "Lowlands, evergreen forest",
       "Parts used": "Fruit",
-      "Medicinal Use": "Treating dermatophyte infections "
+      "Medicinal Use": "Treating dermatophyte infections ",
+      "image": "./img/plants/Citrus aurantifolia.jpeg"
     },
     {
       "Scientific name": "Citrus sinensis",
       "Local name": "ብርቱካን Birtukan",
       "Habitat": "Cultivated in irrigable areas",
       "Parts used": "Fruit, Bark",
-      "Medicinal Use": "Treatment of stomach infections and wounds "
+      "Medicinal Use": "Treatment of stomach infections and wounds ",
+      "image": "./img/plants/Citrus sinensis.jpg"
     },
     {
       "Scientific name": "Clerodendrum myricoides",
       "Local name": "ምስሪች Misrich",
       "Habitat": "Not specified yet",
       "Parts used": "Root",
-      "Medicinal Use": "Treatment of earaches and headaches "
+      "Medicinal Use": "Treatment of earaches and headaches ",
+      "image": "./img/plants/Clerodendrum myricoides.jpg"
     },
     {
       "Scientific name": "Coffee arabica",
       "Local name": "ቡና Buna",
       "Habitat": "Shaded coffee plantations",
       "Parts used": "Seeds",
-      "Medicinal Use": "Curing diarrhea by pounding and mixing with honey "
+      "Medicinal Use": "Curing diarrhea by pounding and mixing with honey ",
+      "image": "./img/plants/Coffee arabica.jpg"
     },
     {
       "Scientific name": "Coronopus didymus",
       "Local name": "ሱሩማ Surumaa",
       "Habitat": "Fields, roadsides",
       "Parts used": "Whole plant",
-      "Medicinal Use": "Treatment of stomach disorders and as an antiscorbutic "
+      "Medicinal Use": "Treatment of stomach disorders and as an antiscorbutic ",
+      "image": "./img/plants/Coronopus didymus.jpg"
     },
+    
     {
       "Scientific name": "Crinum abyssinicum",
       "Local name": "የጅብ ሽንኩርት Yejb shinkurt",
       "Habitat": "Waterlogged valleys, grasslands, swampy areas, fallow fields",
       "Parts used": "Leaves",
-      "Medicinal Use": "Treatment of tumors in general "
+      "Medicinal Use": "Treatment of tumors in general",
+      "image": "./img/plants/Crinum abyssinicum.jpg"
     },
     {
       "Scientific name": "Cucurbita pepo",
       "Local name": "ዱባ/የበር ቅል Duba/Yebarqil",
       "Habitat": "Cultivated in home gardens, farmlands",
-      "Parts used": "Leaves",
-      "Medicinal Use": "Treatment of gastritis "
+      "Medicinal Use": "Treatment of gastritis ",
+      "image": "./img/plants/Cucurbita pepo.jpeg"
     },
     {
       "Scientific name": "Datura stramonium",
       "Local name": "አፄ ፋሪስ Atse-faris",
       "Habitat": "Disturbed places, waste ground, roadsides",
       "Parts used": "Seed",
-      "Medicinal Use": "Treatment of depression "
+      "Medicinal Use": "Treatment of depression ",
+      "image": "./img/plants/Datura stramonium.jpeg"
     },
     {
       "Scientific name": "Dorstenia barnimiana",
       "Local name": "ወርቅ በመዳ Worq-bemeda",
       "Habitat": "Woodland, upland grassland, evergreen bushland",
       "Parts used": "Roots/tubers",
-      "Medicinal Use": "Treatment of tumors visible on the body surface "
+      "Medicinal Use": "Treatment of tumors visible on the body surface ",
+      "image": "./img/plants/Dorstenia barnimiana.jpg"
     },
     {
       "Scientific name": "Drynaria Volkensii",
       "Local name": "ተቀስብላ Tekesbila",
       "Habitat": "Mountainous regions",
       "Parts used": "Rhizome",
-      "Medicinal Use": "Traditional bone healing "
+      "Medicinal Use": "Traditional bone healing ",
+      "image": "./img/plants/Drynaria Volkensii.jpeg"
     },
     {
       "Scientific name": "Echinops kebericho",
       "Local name": "ቀበሪቾ Kebericho",
       "Habitat": "Montane Acacia Woodland, disturbed bushland",
       "Parts used": "Root",
-      "Medicinal Use": "Treatment of toothaches, vomiting, and headaches "
+      "Medicinal Use": "Treatment of toothaches, vomiting, and headaches ",
+      "image": "./img/plants/Echinops kebericho.jpeg"
     },
     {
       "Scientific name": "Erythrina abyssinica",
       "Local name": "ቆርቆሮ Korkoro",
       "Habitat": "Woodlands",
       "Parts used": "Bark, Roots",
-      "Medicinal Use": "Anti-inflammatory properties and treatment of wounds "
+      "Medicinal Use": "Anti-inflammatory properties and treatment of wounds ",
+      "image": "./img/plants/Erythrina abyssinica.jpg"
     },
     {
       "Scientific name": "Eucalyptus globules Labill",
       "Local name": "ነጭ ባህርዛፍ Nech-bahirzaf",
       "Habitat": "Various sites including plantations",
       "Parts used": "Leaves",
-      "Medicinal Use": "Treatment of influenza and allergies "
+      "Medicinal Use": "Treatment of influenza and allergies ",
+      "image": "./img/plants/Eucalyptus globules Labill.jpg"
     },
     {
       "Scientific name": "Euphorbia abyssinica",
       "Local name": "ቁልቋል Qulkual",
       "Habitat": "Steep rocky hillsides, around churches, live fences",
       "Parts used": "Latex",
-      "Medicinal Use": "Treatment of skin cancer "
+      "Medicinal Use": "Treatment of skin cancer ",
+      "image": "./img/plants/Euphorbia abyssinica.jpeg"
     },
     {
       "Scientific name": "Euphorbia tirucalli",
       "Local name": "ቅንጭብ Qinchib",
       "Habitat": "Live fence of home gardens",
       "Parts used": "Roots, Latex",
-      "Medicinal Use": "Treatment of tumors/cancer "
+      "Medicinal Use": "Treatment of tumors/cancer ",
+      "image": "./img/plants/Euphorbia tirucalli.jpg"
     },
     {
       "Scientific name": "Ficus sycomorus",
       "Local name": "ባንባ Banba",
       "Habitat": "River and lake margins, woodland, forest edges and clearings, wooded grassland",
       "Parts used": "Bark",
-      "Medicinal Use": "Curing hepatitis "
+      "Medicinal Use": "Curing hepatitis ",
+      "image": "./img/plants/Ficus sycomorus.jpg"
     },
     {
       "Scientific name": "Gladiolus schweinfurthii",
       "Local name": "ምላስ ጎልጉል Milas golgul",
       "Habitat": "Open grassland, Acacia woodland, rocky limestone slope",
       "Parts used": "Root",
-      "Medicinal Use": "Treating headache "
+      "Medicinal Use": "Treating headache ",
+      "image": "./img/plants/Gladiolus schweinfurthii.jpeg"
     },
     {
       "Scientific name": "Glinus lotoides",
       "Local name": "ምጥሬ/አምክን Meterie/Amkin",
       "Habitat": "Disturbed sites",
       "Parts used": "Leafy stem",
-      "Medicinal Use": "Treatment of tapeworm "
+      "Medicinal Use": "Treatment of tapeworm ",
+      "image": "./img/plants/Glinus lotoides.jpg"
     },
     {
       "Scientific name": "Guizotia scabra",
       "Local name": "አደይ አበባ Adey ababa",
       "Habitat": "Annual crop, cultivated in warm and temperate climates with moderate rainfall pattern",
       "Parts used": "Leaves",
-      "Medicinal Use": "Wound treatment "
+      "Medicinal Use": "Wound treatment ",
+      "image": "./img/plants/Guizotia scabra.jpg"
     },
     {
       "Scientific name": "Justicia schimperiana",
       "Local name": "ሰንሰል Sensel",
       "Habitat": "Open woodland, riverine vegetation, live fence of houses",
       "Parts used": "Leaves",
-      "Medicinal Use": "Preventing bat urine "
+      "Medicinal Use": "Preventing bat urine ",
+      "image": "./img/plants/Justicia schimperiana.jpg"
     },
     {
-      "Scientific name": "Linum usitatissimum",
+      "Scientific name": "Linum Usitatissimum",
       "Local name": "ተልባ Telba",
       "Habitat": "Cultivated",
       "Parts used": "Seeds",
-      "Medicinal Use": "Laxative, cholesterol reduction, dietary supplement "
+      "Medicinal Use": "Laxative, cholesterol reduction, dietary supplement ",
+      "image": "./img/plants/Linum Usitatissimum.jpg"
     },
     {
       "Scientific name": "Malva verticillata",
       "Local name": "ልጥ Lut",
       "Habitat": "Paths, clearings in upland forest, upland grassland, cultivated areas near houses",
       "Parts used": "Root",
-      "Medicinal Use": "Curing cancer/tumor "
+      "Medicinal Use": "Curing cancer/tumor ",
+      "image": "./img/plants/Malva verticillata.png"
     },
     {
       "Scientific name": "Moringa stenopetala",
       "Local name": "ሽፈራው Shiferaw",
       "Habitat": "Cultivated in terraced fields, gardens, small towns, riverine and woodland",
       "Parts used": "Root",
-      "Medicinal Use": "Relief from asthma "
+      "Medicinal Use": "Relief from asthma ",
+      "image": "./img/plants/Moringa stenopetala.png"
     },
     {
       "Scientific name": "Musa sapientum",
       "Local name": "ኮባ Koba",
       "Habitat": "Cultivated on large irrigated farms and in-house gardens",
       "Parts used": "Bulb",
-      "Medicinal Use": "Used as an abortion medicine "
+      "Medicinal Use": "Used as an abortion medicine ",
+      "image": "./img/plants/Musa sapientum.jpeg"
     },
     {
       "Scientific name": "Nicotiana tabacum",
       "Local name": "ትምባሆ Timbaho",
       "Habitat": "Cultivated in villages, home gardens, tobacco farms",
       "Parts used": "Leaves",
-      "Medicinal Use": "Treating snakebites "
+      "Medicinal Use": "Treating snakebites ",
+      "image": "./img/plants/Nicotiana tabacum.jpeg"
     },
     {
       "Scientific name": "Nigella sativa",
       "Local name": "ጥቁር አዝሙድ Tikur azmud",
       "Habitat": "Cultivated in homesteads, fields, also found in wild",
       "Parts used": "Seed",
-      "Medicinal Use": "Treatment of asthma (chewed), runny nose and common cold (wrapped in a leaf and inserted into the nose), headache "
+      "Medicinal Use": "Treatment of asthma (chewed), runny nose and common cold (wrapped in a leaf and inserted into the nose), headache ",
+      "image": "./img/plants/Nigella sativa.jpg"
     },
     {
       "Scientific name": "Ocimum lamiifolium",
       "Local name": "ዳማካሴ Damakesie",
       "Habitat": "Acacia-Commiphora bush- and woodland, limestone slopes, home gardens",
       "Parts used": "Leaves",
-      "Medicinal Use": "Treatment of fibril illness "
+      "Medicinal Use": "Treatment of fibril illness ",
+      "image": "./img/plants/Ocimum lamiifolium.jpg"
     },
     {
       "Scientific name": "Olea europaea",
       "Local name": "ዎይራ Woira",
       "Habitat": "Home gardens, monasteries, churches, woody vegetation",
       "Parts used": "Leaves, Roots",
-      "Medicinal Use": "Curing dysentery, stomachache, bone TB, wound treatment "
+      "Medicinal Use": "Curing dysentery, stomachache, bone TB, wound treatment ",
+      "image": "./img/plants/Olea europaea.jpg"
     },
     {
       "Scientific name": "Opuntia ficusindica",
       "Local name": "የባህር ቁልቋል Yebereha qulkual",
       "Habitat": "Disturbed areas, degraded areas, live fences of houses",
       "Parts used": "Leaves",
-      "Medicinal Use": "Killing malaria vectors "
+      "Medicinal Use": "Killing malaria vectors ",
+      "image": "./img/plants/Opuntia ficusindica.jpeg"
     },
     {
-      "Scientific name": "Pentas lanceolate",
+      "Scientific name": "Pentas Lanceolate",
       "Local name": "ታባትም Tabatem",
       "Habitat": "Gardens, wild",
       "Parts used": "Leaves, Roots",
-      "Medicinal Use": "Traditional remedies for skin infections "
+      "Medicinal Use": "Traditional remedies for skin infections ",
+      "image": "./img/plants/Pentas Lanceolata.jpeg"
     },
     {
       "Scientific name": "Plumbago zeylanica",
       "Local name": "አሚራ Amira",
       "Habitat": "Disturbed habitats by roads and paths, bushland, woodland, savannah",
       "Parts used": "Root",
-      "Medicinal Use": "Preventing gonorrhea, hemorrhoids, toothache, and mastitis; used as an antiseptic "
+      "Medicinal Use": "Preventing gonorrhea, hemorrhoids, toothache, and mastitis; used as an antiseptic ",
+      "image": "./img/plants/Plumbago zeylanica.jpg"
     },
     {
       "Scientific name": "Premna schimperi",
       "Local name": "ቾቾ Chocho",
       "Habitat": "Degraded and secondary forests, grassy meadows, along forest paths",
       "Parts used": "Root, Leaves",
-      "Medicinal Use": "Treating mastitis, preventing boils "
+      "Medicinal Use": "Treating mastitis, preventing boils ",
+      "image": "./img/plants/Premna schimperi.jpg"
     },
     {
       "Scientific name": "Rhamnus prinoides",
       "Local name": "ጌሽሖ Gesho",
       "Habitat": "Highlands",
       "Parts used": "Leaves, bark",
-      "Medicinal Use": "Brewing, stomachic, antimicrobial "
+      "Medicinal Use": "Brewing, stomachic, antimicrobial ",
+      "image": "./img/plants/Rhamnus prinoides.jpg"
     },
     {
       "Scientific name": "Rosa abyssinica",
       "Local name": "አበባ Abeba",
       "Habitat": "Highlands",
       "Parts used": "Flowers",
-      "Medicinal Use": "Aromatic, decorations, traditional medicine "
+      "Medicinal Use": "Aromatic, decorations, traditional medicine ",
+      "image": "./img/plants/Rosa abyssinica.jpg"
     },
     {
       "Scientific name": "Ruta chalepensis",
       "Local name": "ጥናዳም Tenadam",
       "Habitat": "Cultivated, wild",
       "Parts used": "Leaves, stems",
-      "Medicinal Use": "Relieving stomach ache through cold water maceration and ingestion "
+      "Medicinal Use": "Relieving stomach ache through cold water maceration and ingestion ",
+      "image": "./img/plants/Ruta chalepensis.jpg"
     },
     {
       "Scientific name": "Schinus molle",
       "Local name": "ቁንዶ በርበሬ Qundo berbere",
       "Habitat": "Cultivated, wild",
       "Parts used": "Fruits, bark",
-      "Medicinal Use": "Analgesic, antimicrobial, spice "
+      "Medicinal Use": "Analgesic, antimicrobial, spice ",
+      "image": "./img/plants/Schinus molle.jpeg"
     },
     {
       "Scientific name": "Solanum incanum",
       "Local name": "ጥቁር አውድ Tikur awud",
       "Habitat": "Cultivated, riverine gallery forest, disturbed habitats",
       "Parts used": "Leaves, roots",
-      "Medicinal Use": "Treating bleeding, menstruation, amebiasis "
+      "Medicinal Use": "Treating bleeding, menstruation, amebiasis ",
+      "image": "./img/plants/Solanum incanum.jpg"
     },
     {
       "Scientific name": "Solanum nigrum",
       "Local name": "እምቧይ Embuay",
       "Habitat": "Cultivation, ruderal areas, roadsides, bushland",
       "Parts used": "Leaves, roots, stems",
-      "Medicinal Use": "Treatment of cancerous sores, and wounds; eaten as pot herb for virility, dysmenorrhea, dysentery, sore throat "
+      "Medicinal Use": "Treatment of cancerous sores, and wounds; eaten as pot herb for virility, dysmenorrhea, dysentery, sore throat ",
+      "image": "./img/plants/Solanum nigrum.JPG"
     },
     {
       "Scientific name": "Spathodea campanulata",
       "Local name": "አባሎ Abalo",
       "Habitat": "Rainforests, savannas, riverbanks",
       "Parts used": "Flowers, Bark",
-      "Medicinal Use": "Anti-inflammatory, wound healing, gastrointestinal issues "
+      "Medicinal Use": "Anti-inflammatory, wound healing, gastrointestinal issues ",
+      "image": "./img/plants/Spathodea campanulata.jpg"
     },
     {
       "Scientific name": "Stephania abyssinica",
       "Local name": "ያይት ሀረግ Yayit hareg",
       "Habitat": "Thickets, forest margins, hillsides, cultivated fields",
       "Parts used": "Root",
-      "Medicinal Use": "Treatment of external tumors/cancer, stomachache "
+      "Medicinal Use": "Treatment of external tumors/cancer, stomachache ",
+      "image": "./img/plants/Stephania abyssinica.jpg"
     },
     {
       "Scientific name": "Stereospermum kunthianum",
       "Local name": "አርዝያ Arziniya",
       "Habitat": "Open woodland, savanna, widespread in tropical Africa",
       "Parts used": "Bark",
-      "Medicinal Use": "Treatment of kidney issues through drinking juice crushed from bark "
+      "Medicinal Use": "Treatment of kidney issues through drinking juice crushed from bark ",
+      "image": "./img/plants/Stereospermum kunthianum.jpg"
     },
     {
       "Scientific name": "Thunbergia erecta",
       "Local name": "ማርት Marte",
       "Habitat": "Woodland, grassland, evergreen forest",
       "Parts used": "Not reported",
-      "Medicinal Use": "Curing poisonous snakebites "
+      "Medicinal Use": "Curing poisonous snakebites ",
+      "image": "./img/plants/Thunbergia erecta.png"
     },
     {
       "Scientific name": "Thymus capitatus",
       "Local name": "ጦስኝ Tosign",
       "Habitat": "Home garden",
       "Parts used": "Leaves",
-      "Medicinal Use": "Treatment of stomach diseases, cough, asthma "
+      "Medicinal Use": "Treatment of stomach diseases, cough, asthma ",
+      "image": "./img/plants/Thymus capitatus.jpg"
     },
     {
       "Scientific name": "Tribulus terrestris",
       "Local name": "ኩርንችት Kurnchit",
       "Habitat": "Open, disturbed places, often on sandy soils",
       "Parts used": "Stem, Fruit, Seed",
-      "Medicinal Use": "Treatment of various ailments including scabrous skin diseases, congestion, headache, hepatitis, vertigo, etc. "
+      "Medicinal Use": "Treatment of various ailments including scabrous skin diseases, congestion, headache, hepatitis, vertigo, etc. ",
+      "image": "./img/plants/Tribulus terrestris.jpg"
     },
     {
       "Scientific name": "Urtica pilulifera",
       "Local name": "ሳማ Sama",
       "Habitat": "Waste grounds, roadsides, cultivated fields",
       "Parts used": "Leaves",
-      "Medicinal Use": "Treatment of sore joints, rheumatism, hemorrhage "
+      "Medicinal Use": "Treatment of sore joints, rheumatism, hemorrhage ",
+      "image": "./img/plants/Urtica pilulifera.jpeg"
     },
     {
       "Scientific name": "Vernonia amygdalina",
       "Local name": "ግራር Girawa",
       "Habitat": "Bush/woodland, forest habitats, home gardens",
       "Parts used": "Leaves",
-      "Medicinal Use": "Prevention of headaches, and intestinal worms; treatment of tumors/cancer "
+      "Medicinal Use": "Prevention of headaches, and intestinal worms; treatment of tumors/cancer ",
+      "image": "./img/plants/Vernonia amygdalina.jpg"
     },
     {
       "Scientific name": "Withania somnifera",
       "Local name": "ግዛዋ Gizawa",
       "Habitat": "Cultivation, lake shores, riverbanks, open woodland",
       "Parts used": "Leaves",
-      "Medicinal Use": "Treatment of malaria "
+      "Medicinal Use": "Treatment of malaria ",
+      "image": "./img/plants/Withania somnifera.jpg"
     },
     {
       "Scientific name": "Xanthium strumarium",
       "Local name": "ድሃ ንቅል Deha nikel",
       "Habitat": "Wet forest margins, riverine vegetation",
       "Parts used": "Leaves",
-      "Medicinal Use": "Treatment of dandruff "
+      "Medicinal Use": "Treatment of dandruff ",
+      "image": "./img/plants/Xanthium strumarium.jpg"
     },
     {
       "Scientific name": "Ximenia americana",
       "Local name": "እንኮይ Enkoy",
       "Habitat": "Acacia woodland, wooded grassland",
       "Parts used": "Fruit, Kernel, Root",
-      "Medicinal Use": "Preventing infections in fresh wounds, treating stomachache, tonsillitis "
+      "Medicinal Use": "Preventing infections in fresh wounds, treating stomachache, tonsillitis ",
+      "image": "./img/plants/Ximenia americana.jpg"
     },
     {
       "Scientific name": "Zingiber officinale Roscoe",
       "Local name": "ዝንጅብል Zengibil",
       "Habitat": "Cultivated",
       "Parts used": "Roots",
-      "Medicinal Use": "Treatment of digestion problems, inflammation"
+      "Medicinal Use": "Treatment of digestion problems, inflammation",
+      "image": "./img/plants/Zingiber officinale Roscoe.jpg"
     }
   ]
 }

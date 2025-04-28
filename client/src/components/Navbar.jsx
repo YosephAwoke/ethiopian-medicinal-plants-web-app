@@ -5,11 +5,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-green-600 to-green-800 text-white p-6 shadow-lg">
+    <nav className="sticky top-0 bg-gradient-to-r from-green-600 to-green-800 text-white p-6 shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-3xl font-extrabold tracking-wide">Ethiopian Medicinal Plants
-
-        </div>
+        <h2 className="text-3xl font-extrabold tracking-wide cursor-pointer hover:text-green-200 transition" onClick={() => window.location.href = '#home'}>Ethiopian Medicinal Plants</h2>
         <div className="ml-40 hidden md:flex space-x-6">
           <a
             href="#home"
@@ -24,7 +22,7 @@ const Navbar = () => {
             Prediction
           </a>
           <a
-            href="#plant-info"
+            href="#plant-info-section"
             className="px-4 py-2 font-bold rounded-lg bg-gradient-to-r from-green-500 to-green-600 hover:from-green-500 hover:to-green-400 transition-all"
           >
             Plant Info

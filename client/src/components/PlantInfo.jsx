@@ -31,68 +31,77 @@ const PlantInfo = () => {
               <img
                 src={plant.image}
                 alt={plant["Scientific name"]}
-                className="w-full h-40 object-cover rounded-t-lg mb-4"
-                onError={(e) => (e.target.src = 'https://via.placeholder.com/150')} // Fallback image
-              />
-              <h3 className="text-xl font-bold text-gray-800 mb-2">
-                {plant["Scientific name"]}
-              </h3>
-              <p className="text-gray-600 mb-2">
-                <strong>Local Name:</strong> {plant["Local name"]}
-              </p>
-              <p className="text-gray-600 mb-2">
-                <strong>Habitat:</strong> {plant["Habitat"]}
-              </p>
-              <p className="text-gray-600 mb-2">
-                <strong>Parts Used:</strong> {plant["Parts used"]}
-              </p>
-              <button
-                onClick={() => setSelectedPlant(plant)}
-                className="mt-4 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition"
-              >
-                Read More
-              </button>
-            </div>
-          ))}
-        </div>
+                className="w-full h-50 object-cover rounded-t-lg mb-4"
+                // Fallback image
+                    />
+                    <h3 className="text-xl font-bold text-gray-800 mb-2">
+                    {plant["Scientific name"]}
+                    </h3>
+                    <p className="text-gray-600 mb-2">
+                    <strong>Local Name:</strong> {plant["Local name"]}
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                    <strong>Habitat:</strong> {plant["Habitat"]}
+                    </p>
+                    <p className="text-gray-600 mb-2">
+                    <strong>Parts Used:</strong> {plant["Parts used"]}
+                    </p>
+                    <p className="text-gray-600 mb-2 truncate">
+                    <strong>Medicinal Uses:</strong> {plant["Medicinal Use"]}
+                    </p>
+                    <button
+                    onClick={() => setSelectedPlant(plant)}
+                    className="mt-4 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition"
+                    >
+                    Read More
+                    </button>
+                    </div>
+                    ))} 
+                  </div>
 
-        {/* Pagination */}
-        <div className="flex justify-center items-center mt-8 space-x-4">
-          {currentPage > 1 && (
-            <button
-              onClick={() => handlePageChange(currentPage - 1)}
-              className="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400"
-            >
-              Previous
-            </button>
-          )}
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-            <button
-              key={page}
-              onClick={() => handlePageChange(page)}
-              className={`px-4 py-2 rounded-lg ${
-                page === currentPage
-                  ? 'bg-green-600 text-white'
-                  : 'bg-gray-300 hover:bg-gray-400'
-              }`}
-            >
-              {page}
-            </button>
-          ))}
-          {currentPage < totalPages && (
-            <button
-              onClick={() => handlePageChange(currentPage + 1)}
-              className="px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400"
-            >
-              Next
-            </button>
-          )}
-        </div>
+                  {/* Pagination */}
+                  <div className="flex flex-wrap justify-center items-center mt-8 space-x-2 lg:space-x-4">
+                    {currentPage > 1 && (
+                    <button
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    className="px-3 py-2 lg:px-6 bg-gray-300 rounded-lg hover:bg-gray-400"
+                    >
+                    Previous
+                    </button>
+                    )}
+                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                    <button
+                    key={page}
+                    onClick={() => handlePageChange(page)}
+                    className={`px-3 py-2 lg:px-4 rounded-lg ${
+                    page === currentPage
+                      ? 'bg-green-600 text-white'
+                      : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                    >
+                    {page}
+                    </button>
+                    ))}
+                    {currentPage < totalPages && (
+                    <button
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    className="px-3 py-2 lg:px-6 bg-gray-300 rounded-lg hover:bg-gray-400"
+                    >
+                    Next
+                    </button>
+                    )}
+                  </div>
 
-        {/* Modal for Plant Details */}
+                  {/* Modal for Plant Details */}
         {selectedPlant && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2 relative">
+          <div
+            className="fixed inset-0 bg-gray-900 bg- flex items-center justify-center z-50"
+            onClick={() => setSelectedPlant(null)} // Close on clicking the background
+          >
+            <div
+              className="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-2/4 lg:w-3/8 relative"
+              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal
+            >
               <button
                 onClick={() => setSelectedPlant(null)}
                 className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
@@ -102,7 +111,7 @@ const PlantInfo = () => {
               <img
                 src={selectedPlant.image}
                 alt={selectedPlant["Scientific name"]}
-                className="w-full h-60 object-cover rounded-lg mb-4"
+                className="w-full h-auto object-contain rounded-lg mb-4"
                 onError={(e) => (e.target.src = 'https://via.placeholder.com/150')} // Fallback image
               />
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
