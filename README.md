@@ -1,6 +1,3 @@
-Of course! Here's a **much cleaner, stylish, and interactive** version of your README that you can **directly paste** into your GitHub repo.  
-It uses **Markdown** features (bolds, emoji icons, code blocks, styled sections, etc.) to make it **professional and appealing**:
-
 ---
 
 # 🌿 **Ethiopian Medicinal Plants**
@@ -107,6 +104,3 @@ This project is licensed under the **MIT License**.
 See the [LICENSE](LICENSE) file for details.
 
 ---
-
-Would you also like me to create a **badge version** (with GitHub badges like "React", "FastAPI", "License: MIT", etc.) to make it look *even more* like professional open-source projects? 🌟  
-If yes, I can do that too! 🚀
