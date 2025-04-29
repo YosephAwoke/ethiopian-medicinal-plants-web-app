@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({ onSignInClick }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -41,7 +41,10 @@ const Navbar = () => {
           </a>
         </div>
         <div className="hidden md:flex items-center space-x-4">
-          <button className="flex items-center px-4 py-2 font-bold rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-400 hover:to-blue-600 transition-all">
+          <button
+            onClick={onSignInClick}
+            className="flex items-center px-4 py-2 font-bold rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-400 hover:to-blue-600 transition-all"
+          >
             <FaUserCircle className="mr-2" />
             Sign In
           </button>
@@ -85,7 +88,10 @@ const Navbar = () => {
           <a href="#about-us" className="block px-4 py-2 font-bold rounded-lg bg-gradient-to-r from-green-500 to-green-700 hover:from-green-400 hover:to-green-600 transition-all">
             About Us
           </a>
-          <button className="flex items-center w-full px-4 py-2 font-bold rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-400 hover:to-blue-600 transition-all">
+          <button
+            onClick={onSignInClick}
+            className="flex items-center w-full px-4 py-2 font-bold rounded-lg bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-400 hover:to-blue-600 transition-all"
+          >
             <FaUserCircle className="mr-2" />
             Sign In
           </button>
