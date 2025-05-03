@@ -45,7 +45,7 @@ const Profile = ({ user, onUpdateUser }) => {
       }
 
       const response = await axios.put(
-        'http://localhost:5000/api/auth/profile',
+        'http://localhost:5000/api/auth/profile/photo',
         formData,
         {
           headers: {
@@ -70,51 +70,16 @@ const Profile = ({ user, onUpdateUser }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-green-100 to-blue-100 flex flex-col items-center p-8">
-      <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-4xl">
-        <h2 className="text-3xl font-bold mb-6 text-center">Profile</h2>
-        <p className="text-center text-gray-600 mb-8">Welcome to your profile page. Here you can view and update your personal information.</p>
+    <div className="min-h-screen bg-gradient-to-r from-green-200 to-blue-200 flex items-center justify-center p-8">
+      <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-6xl">
+        <h2 className="text-4xl font-bold mb-6 text-center text-gray-800">Profile</h2>
+        <p className="text-center text-gray-600 mb-8">Manage your profile information and photo below.</p>
         {success && <p className="text-green-500 mb-4 text-center">{success}</p>}
         {error && <p className="text-red-500 mb-4 text-center">{error}</p>}
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-          <div className="flex flex-col items-center">
-            <img
-              src={photo instanceof File ? URL.createObjectURL(photo) : photo || 'https://via.placeholder.com/150'}
-              alt="User"
-              className="w-40 h-40 rounded-full object-cover mb-4 border-2 border-gray-300"
-            />
-            {isEditingPhoto ? (
-              <form onSubmit={handlePhotoUpdate} className="text-center">
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={handlePhotoChange}
-                  className="text-sm text-gray-600 mb-4"
-                />
-                <button
-                  type="submit"
-                  className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
-                >
-                  Save Photo
-                </button>
-                <button
-                  onClick={() => setIsEditingPhoto(false)}
-                  type="button"
-                  className="ml-4 bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
-                >
-                  Cancel
-                </button>
-              </form>
-            ) : (
-              <button
-                onClick={() => setIsEditingPhoto(true)}
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-              >
-                Change Photo
-              </button>
-            )}
-          </div>
-          <div className="flex-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Profile Update Section */}
+          <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+            <h3 className="text-2xl font-semibold mb-4 text-gray-700">Update Profile</h3>
             {!isEditingProfile ? (
               <div>
                 <p className="mb-4"><strong>Full Name:</strong> {name}</p>
@@ -169,6 +134,46 @@ const Profile = ({ user, onUpdateUser }) => {
                   Cancel
                 </button>
               </form>
+            )}
+          </div>
+
+          {/* Photo Update Section */}
+          <div className="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
+            <h3 className="text-2xl font-semibold mb-4 text-gray-700">Profile Photo</h3>
+            <img
+              src={photo instanceof File ? URL.createObjectURL(photo) : photo || 'https://via.placeholder.com/150'}
+              alt="User"
+              className="w-40 h-40 rounded-full object-cover mb-4 border-2 border-gray-300"
+            />
+            {isEditingPhoto ? (
+              <form onSubmit={handlePhotoUpdate} className="text-center">
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={handlePhotoChange}
+                  className="text-sm text-gray-600 mb-4"
+                />
+                <button
+                  type="submit"
+                  className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                >
+                  Save Photo
+                </button>
+                <button
+                  onClick={() => setIsEditingPhoto(false)}
+                  type="button"
+                  className="ml-4 bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+                >
+                  Cancel
+                </button>
+              </form>
+            ) : (
+              <button
+                onClick={() => setIsEditingPhoto(true)}
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              >
+                Change Photo
+              </button>
             )}
           </div>
         </div>

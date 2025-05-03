@@ -79,4 +79,27 @@ router.put('/profile', authenticateToken, upload.single('photo'), async (req, re
   }
 });
 
+// Update Profile Photo
+router.put('/profile/photo', authenticateToken, upload.single('photo'), async (req, res) => {
+  const userId = req.userId; // Extracted from the middleware
+
+  try {
+    if (!req.file) {
+      return res.status(400).json({ message: 'No photo uploaded' });
+    }
+
+    const updatedUser = await User.findByIdAndUpdate(
+      userId,
+      { photo: req.file.path },
+      { new: true }
+    );
+
+    if (!updatedUser) return res.status(404).json({ message: 'User not found' });
+
+    res.status(200).json({ user: { id: updatedUser._id, name: updatedUser.name, email: updatedUser.email, photo: updatedUser.photo } });
+  } catch (err) {
+    res.status(500).json({ message: 'Something went wrong' });
+  }
+});
+
 module.exports = router;
