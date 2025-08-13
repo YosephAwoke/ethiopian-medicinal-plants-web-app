@@ -1,17 +1,23 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+
+
 import axios from 'axios';
 
-const Profile = ({ user, onUpdateUser }) => {
+const Profile = ({ user, onUpdateUser, onLogout }) => {
   const [isEditingProfile, setIsEditingProfile] = useState(false);
   const [isEditingPhoto, setIsEditingPhoto] = useState(false);
   const [name, setName] = useState(user.name);
   const [email, setEmail] = useState(user.email);
   const [password, setPassword] = useState('');
-  const [photo, setPhoto] = useState(user.photo || '');
+  const [photoFile, setPhotoFile] = useState(null); // for preview only
+  useEffect(() => {
+    setName(user.name);
+    setEmail(user.email);
+    // Do not clear photoFile here; only clear after successful photo upload
+  }, [user]);
   const [success, setSuccess] = useState('');
   const [error, setError] = useState('');
-  const navigate = useNavigate();
+  // const navigate = useNavigate(); // No longer needed
 
   const handleProfileUpdate = async (e) => {
     e.preventDefault();
@@ -40,8 +46,8 @@ const Profile = ({ user, onUpdateUser }) => {
     e.preventDefault();
     try {
       const formData = new FormData();
-      if (photo instanceof File) {
-        formData.append('photo', photo);
+      if (photoFile instanceof File) {
+        formData.append('photo', photoFile);
       }
 
       const response = await axios.put(
@@ -54,10 +60,12 @@ const Profile = ({ user, onUpdateUser }) => {
           },
         }
       );
+      console.log('Backend response after photo upload:', response.data);
       setSuccess('Photo updated successfully!');
       setError('');
       onUpdateUser(response.data.user);
       setIsEditingPhoto(false);
+      setPhotoFile(null); // clear preview
     } catch (err) {
       console.error('Photo Update Error:', err);
       setError(err.response?.data?.message || 'Something went wrong');
@@ -66,8 +74,31 @@ const Profile = ({ user, onUpdateUser }) => {
   };
 
   const handlePhotoChange = (e) => {
-    setPhoto(e.target.files[0]);
+    setPhotoFile(e.target.files[0]);
   };
+
+  // Helper to get the correct photo URL
+  const getPhotoUrl = () => {
+    if (photoFile instanceof File) {
+      return URL.createObjectURL(photoFile);
+    }
+    const userPhoto = user.photo;
+    if (!userPhoto) {
+      return 'https://ui-avatars.com/api/?name=' + encodeURIComponent(user.name || 'User');
+    }
+    if (userPhoto.startsWith('http://') || userPhoto.startsWith('https://')) {
+      return userPhoto;
+    }
+    return `http://localhost:5000/${userPhoto}`;
+  };
+
+  // Debug output (optional, can remove after confirming fix)
+  useEffect(() => {
+    console.log('Profile user.photo value:', user.photo);
+    console.log('Profile computed photo URL:', getPhotoUrl());
+    // getPhotoUrl is a stable function, so it's safe to ignore exhaustive-deps warning here
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user.photo, photoFile]);
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-green-200 to-blue-200 flex items-center justify-center p-8">
@@ -141,7 +172,7 @@ const Profile = ({ user, onUpdateUser }) => {
           <div className="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center">
             <h3 className="text-2xl font-semibold mb-4 text-gray-700">Profile Photo</h3>
             <img
-              src={photo instanceof File ? URL.createObjectURL(photo) : photo || 'https://via.placeholder.com/150'}
+              src={getPhotoUrl()}
               alt="User"
               className="w-40 h-40 rounded-full object-cover mb-4 border-2 border-gray-300"
             />
@@ -178,6 +209,7 @@ const Profile = ({ user, onUpdateUser }) => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

@@ -9,12 +9,27 @@ const path = require('path');
 const router = express.Router();
 
 // Configure multer for file uploads
+const fs = require('fs');
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, 'uploads/'); // Save files to the 'uploads' directory
+    cb(null, 'uploads/');
   },
-  filename: (req, file, cb) => {
-    cb(null, `${Date.now()}-${file.originalname}`);
+  filename: async (req, file, cb) => {
+    try {
+      const userId = req.userId;
+      const ext = path.extname(file.originalname);
+      const newFileName = `${userId}-profile${ext}`;
+      // Delete old photo if it exists (for this user, any extension)
+      const files = fs.readdirSync('uploads/');
+      files.forEach(f => {
+        if (f.startsWith(`${userId}-profile`) && f !== newFileName) {
+          fs.unlinkSync(path.join('uploads', f));
+        }
+      });
+      cb(null, newFileName);
+    } catch (err) {
+      cb(err);
+    }
   },
 });
 
@@ -67,13 +82,15 @@ router.put('/profile', authenticateToken, upload.single('photo'), async (req, re
     }
 
     if (req.file) {
-      updates.photo = req.file.path; // Save the file path to the user's photo
+      // Save only the relative path for the photo
+      updates.photo = `uploads/${userId}-profile${path.extname(req.file.originalname)}`;
     }
 
-    const updatedUser = await User.findByIdAndUpdate(userId, updates, { new: true });
+    const updatedUser = await User.findByIdAndUpdate(userId, updates, { new: true }).lean();
     if (!updatedUser) return res.status(404).json({ message: 'User not found' });
 
-    res.status(200).json({ user: { id: updatedUser._id, name: updatedUser.name, email: updatedUser.email, photo: updatedUser.photo } });
+    // Always include the photo field, even if undefined
+    res.status(200).json({ user: { id: updatedUser._id, name: updatedUser.name, email: updatedUser.email, photo: updatedUser.photo || '' } });
   } catch (err) {
     res.status(500).json({ message: 'Something went wrong' });
   }
@@ -88,15 +105,18 @@ router.put('/profile/photo', authenticateToken, upload.single('photo'), async (r
       return res.status(400).json({ message: 'No photo uploaded' });
     }
 
+    // Save only the relative path for the photo
+    const photoPath = `uploads/${userId}-profile${path.extname(req.file.originalname)}`;
     const updatedUser = await User.findByIdAndUpdate(
       userId,
-      { photo: req.file.path },
+      { photo: photoPath },
       { new: true }
-    );
+    ).lean();
 
     if (!updatedUser) return res.status(404).json({ message: 'User not found' });
 
-    res.status(200).json({ user: { id: updatedUser._id, name: updatedUser.name, email: updatedUser.email, photo: updatedUser.photo } });
+    // Always include the photo field, even if undefined
+    res.status(200).json({ user: { id: updatedUser._id, name: updatedUser.name, email: updatedUser.email, photo: updatedUser.photo || '' } });
   } catch (err) {
     res.status(500).json({ message: 'Something went wrong' });
   }
